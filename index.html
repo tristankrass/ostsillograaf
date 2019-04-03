@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0052)https://ilmet.lr.ttu.ee/labreg/aruanne_ASIG_uside.pl -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Arvutivõrgud labor 1 Analoogsignaalid aruanne</title>
+
+</head>
+
+<body>
+    <h1>Arvutivõrgud Labor 2 Analoogsignaalid aruanne</h1>
+
+    <table border="1" cellpadding="4" cellspacing="0">
+        <tbody>
+            <tr>
+                <td>Töö tegijate nimed:</td>
+            </tr>
+            <tr>
+                <td>Tristan Krass</td>
+            </tr>
+            <tr>
+                <td>Katarina Kala</td>
+            </tr>
+            <tr>
+                <td>Töö tegemise kuupäev: Mon Apr 1 12:54:29 2019</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <h2>1. Analoogliidese parameetrite mõõtmine</h2>
+    <p>
+    </p>
+    <table border="1" cellpadding="4" cellspacing="0">
+        <tbody>
+            <tr>
+                <td>Terminalseadme seisund</td>
+                <td>U<sub>1</sub> [V]</td>
+                <td>U<sub>2</sub> [V]</td>
+                <td>U<sub>3</sub> [V]</td>
+            </tr>
+            <tr>
+                <td>Rahuseisund</td>
+                <td>43.3</td>
+                <td>43.1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Hõiveseisund</td>
+                <td>8.7</td>
+                <td>6.8</td>
+                <td>1.9</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Telefoniliini mõõteplaadil oleva takisti takistuse väärtus 68 Ω
+    </p>
+    <h3>Aruande vormistamisel tuleb teha arvutused: </h3>
+
+    <p>
+        <b>Leida vool, mis läbib terminalseadet tema mõlemates seisundites ja selgitada tulemusi.</b>
+    </p>
+    <p>I=U/R, R=68 Ω,</p>
+    <p>U3(rahuseisundis)=0V, I3(rahuseisundis)=0/68=0A,</p>
+    <p>U3(hõiveseisundis)=1,9V, I3(hõiveseisundis)=1,9/68=0,028A=28mA
+    </p>
+
+    </p>
+    <p>
+        <b>Arvutada telefoniaparaadi takistus ja telefoniliini takistus. </b>
+    </p>
+    <p>R=U/I</p>
+    <p>R(tel)=U2(hõiveseisund)/I(hõiveseisund), R(tel)=6,8/0,028=242,86Ω</p>
+    <p>R(liin)=(U1rahuseisund - U1hõiveseisund)/I(hõiveseisund), R(liin)=(43,3-8,7)/0,028=1235,71Ω</p>
+    <p>
+
+    </p>
+    <h2>2.1 Valimistoon</h2>
+
+    <table cellspacing="0" cellpadding="4" border="1">
+        <tbody>
+            <tr>
+                <td>
+                    <img src="assets/valimistoon.png" alt="Valimistoon">
+                </td>
+                <td>
+                    <img src="assets/valimistoonispekter_144556.png" alt="valimistoonSpekter">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Pinge amplituud: 125mV<br>
+                    Tipust tipuni amplituud: 225mv<br>
+                    Periood: 2.35ms<br>
+                    Sagedus: 426Hz</td>
+                <td>
+                    Sagedus: 400Hz<br>
+                    Pinge efektiivväärtus detsibellides: -21dBV</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        Arvutada signaalipildilt leitud pinge amplituudväärtusest pinge efektiivväärtus:<br>
+        <p>
+            Pinge efektiivväärtus (root mean square amplitude) - siinussignaali puhul amplituudväärtus jagada ruutjuur
+            2-ga.:
+            U=0,125V/√2 = 0,09V
+        </p>
+    </p>
+    <p>
+        Teisendada spektripildilt leitud pinge efektiivväärtus detsibellidest [dBV] voltidesse [V]: <br>
+        <p>
+            <p>dBV = 20 * log_10(V)</p>
+            <p>V = 10 ^(dBV / 20)</p>
+            <p>V = 10 ^ (-21 / 20) = 0,1V</p>
+        </p>
+
+
+    </p>
+    <h2>2.2 Numbriklahv</h2>
+
+    <table cellspacing="0" cellpadding="4" border="1">
+        <tbody>
+            <tr>
+                <td>
+                    <img src="assets/klahv1_2.2.2_112918.png" alt="klahv">
+                </td>
+                <td>
+                    <img src="assets/klahvispekter.png" alt="klahvispekter">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Numbriklahv:1<br>
+                    Tipust tipuni pinge: 2.7V
+                </td>
+                <td>
+                    Spektripildilt leitud esimene sagedus: 700Hz<br>
+                    Esimese pinge efektiivväärtus [dBV]: -8dBV<br>
+                    Spektripildilt leitud teine sagedus: 1210Hz<br>
+                    Teise pinge efektiivväärtus [dBV]: -5dBV<br>
+                    Võrrelda mõõdetud sagedusi tabelis Tabel 1 näidatud sagedustega: Tulemused on üsna täpsed.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        Numbriklahvi signaalipildil on kahe erineva sagedusega siinussignaalidest liitunud signaal.
+        Oletame, et mõlema sageduskomponendi pinged on võrdsed.
+
+        <br>
+        Arvutada tipust tippu amplituudist ühe komponendi pinge efektiivväärtus voltides.
+        <br>
+        Um = 1,5V
+        U = 1.5 /( 2√2) = 0,53V
+        <hr>
+
+    </p>
+    <p>
+        LISADA ARVUTUSED SIIA!
+    </p>
+    <p>
+        Arvutada spektripildilt leitud mõlemad pinge efektiivväärtused voltides.
+    </p>
+    <p>
+        <p>Esimese pinge efektiivväärtus [dBV]: -8dBV</p>
+        <p>Esimese pinge efektiivväärtus [V]:10^(-8/20)=0,4V</p>
+        <p>Teise pinge efektiivväärtus [dBV]: -5dBV</p>
+        <p>Teise pinge efektiivväärtus [V]:10^(-5/20)= 0,56V</p>
+
+
+    </p>
+    <h2>2.3 Vile</h2>
+    <table border="1" cellpadding="4" cellspacing="0">
+        <tbody>
+            <tr>
+                <td>
+                    <img src="assets/vilesignaal.png" alt="vilesignaal">
+                </td>
+                <td>
+                    <img src="assets/vilespekter_142056.png" alt="vilespekter">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Pinge amplituud: 2,6V<br>
+                    Periood: 1.4ms<br>
+                    Sagedus: 714Hz
+                </td>
+                <td>Pinge efektiivväärtus: -4dBV</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+
+        Arvutada vile signaalipildilt mõõdetud pinge amplituudist pinge efektiivväärtus.
+    </p>
+    <p>
+        U=2,6V/√2 = 1,8V
+    </p>
+    <p>
+        <b>Kas amplituud on suurem vilistatud signaalipildil või vilistatud spektripildil?</b>
+    </p>
+    <p>
+        Signaalipildil on suurem amplituud, sest pinge efektiivväärtus on suurem kui spektripildil (U=0,6V).
+    </p>
+
+    <p>
+
+    </p>
+    <h2>2.4 Vokaal</h2>
+    <table border="1" cellpadding="4" cellspacing="0">
+        <tbody>
+            <tr>
+                <td>
+                    <img src="assets/vokaalTristan.png" alt="vokaalTristan">
+                </td>
+                <td>
+                    <img src="assets/spekterTristanavokaal_143253.png" alt="vokaalTristanSpekter">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Liikme nimi: Tristan<br>
+                    Vokaal: a<br>
+                    Tipust tipuni amplituud: 2,6V<br>
+                    Pinge amplituud (maksimaalne kõrvalekalle tasakaaluolekust): 1.5V<br>
+                    Periood (kõige pikem): 8.5ms<br>
+                    Sagedus (kõige madalam): 117.6Hz<br>
+                    Periood (kõige lühem): 1,5ms<br>
+                    Sagedus (kõige kõrgem): 667Hz
+                </td>
+                <td><br></td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+    </p>
+    <table border="1" cellpadding="4" cellspacing="0">
+        <tbody>
+            <tr>
+                <td>
+                    <img src="assets/vokaalKatarina.png" alt="vokaalTristan">
+                </td>
+                <td>
+                    <img src="assets/spekterKatarinavokaal_143153.png" alt="spekterKatarinavokaal_143153">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Liikme nimi: Katarina<br>
+                    Vokaal: e<br>
+                    Tipust tipuni amplituud: 0.6V<br>
+                    Pinge amplituud (maksimaalne kõrvalekalle tasakaaluolekust): 0.4V<br>
+                    Periood (kõige pikem): 4.5ms<br>
+                    Sagedus (kõige madalam): 222Hz<br>
+                    Periood (kõige lühem): 2.5ms<br>
+                    Sagedus (kõige kõrgem): 400Hz
+                </td>
+                <td><br></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+    <h2>3. Individuaalülesanne</h2>
+
+    <p>Matrikli Number: 179302</p>
+    <p>y = Um⋅sin(ω⋅t+φ) , kus</p>
+    <p>y on signaali kuju,</p>
+    <p>Um on amplituud (mitte efektiivväärtus),</p>
+    <p>ω on ringsagedus ja φ on faas.</p>
+
+    <p></p>
+    <p>Um=200mV=0.2V</p>
+    <p>f=600 Hz</p>
+    <p>φ=-π/2rad=-90</p>
+    <p>ω = 2*π*f=2*π*600Hz=1200π Hz</p>
+    <p>
+        y = 0.2 * sin(1200π*t-90)
+    </p>
+    <img src="assets/siniseseisev.png" alt="pinge" height="500px" width="500px">
+    <hr>
+    <p>Uef[dBV]=20*log_10 Uef[V]</p>
+    <p>Uef[dBV]=20*log_10 (0,2)=-13.97dBV</p>
+    <img src="assets/hertsid.jpg" alt="efektiivväärtus" height="500px" width="500px">
+
+    <hr>
+    <h2>Kokkuvõte ja järeldused</h2>
+
+    <p>
+        Tänase seisuga võin öelda, et oskan ostsillograafi pealt leida pinge efektiivväärtuseid!
+    </p>
+    <p>
+
+
+    </p>
+</body>
+
+</html>
